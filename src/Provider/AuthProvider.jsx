@@ -12,12 +12,14 @@ function AuthProvider({ children }) {
     const [user, setUser] = useState(true);
     const [loader, setLoader] = useState(true);
     const [cartPrice, setCartPrice] = useState(0);
-    const [cartItems, setCartItems] = useState([])
+    const [cartItems, setCartItems] = useState([]);
+
+
 
     useEffect(() => {
         const cart = getItem();
         setCartItems(cart)
-    }, [cartItems])
+    }, [])
 
     // create user by email password
     const handleSignIn = (email, password) => {
@@ -74,7 +76,7 @@ function AuthProvider({ children }) {
         loader,
         handleAddToCart,
         cartPrice,
-        cartItems
+        cartItems,
     }
     return (
         <AuthContext.Provider value={authInfo}>
