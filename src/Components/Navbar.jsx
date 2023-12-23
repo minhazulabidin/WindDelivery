@@ -4,7 +4,7 @@ import './Navbar.css';
 import useAuth from './../Hook/hook';
 
 const Navbar = () => {
-    const { user, handleSignOut} = useAuth();
+    const { user, handleSignOut } = useAuth();
 
     return (
 
@@ -31,11 +31,25 @@ const Navbar = () => {
                         <li>
                             <NavLink to='/blogs' className="block py-2 px-3 rounded bg-transparent md:p-0 font-bold text-pink-800" aria-current="page">Blogs</NavLink>
                         </li>
+
                         {
                             user ?
-                                <li className="block cursor-pointer py-2 px-3 rounded bg-transparent md:p-0 font-bold text-pink-800" onClick={handleSignOut} >
-                                    Sign Out
-                                </li>
+                                <div className="dropdown dropdown-end">
+                                    <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
+                                        <div className="w-10 rounded-full">
+                                            <img alt="Tailwind CSS Navbar component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                                        </div>
+                                    </div>
+                                    <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                                        <li>
+                                            <a className="justify-between">
+                                                profile name
+                                            </a>
+                                        </li>
+                                        <li><a>Settings</a></li>
+                                        <li onClick={handleSignOut}><a>Logout</a></li>
+                                    </ul>
+                                </div>
                                 :
                                 <li>
                                     <NavLink to='/login' className="block py-2 px-3 rounded bg-transparent md:p-0 font-bold text-pink-800" aria-current="page">Login</NavLink>
