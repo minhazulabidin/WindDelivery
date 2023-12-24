@@ -10,7 +10,7 @@ const Footer = () => {
                 <div className="flex items-center">
                     <div>
                         <Link to='/' className="flex items-center space-x-3 rtl:space-x-reverse ">
-                            <span className="self-center flex text-xl italic font-bold text-pink-800"><img src={logo} className="mr-1" alt="" /> WindDelivery</span>
+                            <span className="self-center flex text-xl italic font-bold text-color2"><img src={logo} className="mr-1" alt="" /> WindDelivery</span>
                         </Link>
                         <p className="lg:text-xl font-poppins italic text-base">Making deliveries and pickups <br /> so easy.</p>
                     </div>
@@ -48,7 +48,7 @@ const Footer = () => {
             </div>
             <div className="divider"></div>
             <aside className="flex justify-center">
-                <p className="text-center text-sm md:text-base">{moment().format('YYYY')} All right reserved by <span className="text-pink-800 font-bold italic"> WindDelivery</span></p>
+                <p className="text-center text-sm md:text-base">{moment().format('YYYY')} All right reserved by <span className="text-color2 font-bold italic"> WindDelivery</span></p>
             </aside>
         </footer>
 

@@ -17,7 +17,7 @@ const TopFoodCard = ({ food }) => {
                 </div>
                 <div className="flex items-center justify-between">
                     <span className="text-3xl font-bold text-color2 dark:text-white">{strPrice}</span>
-                    <Link to={`/product/${_id}`} className="btn btn-outline hover:text-[#fff] btn-warning ">View Details</Link>
+                    <Link to={`/foods/${_id}`} className="btn btn-outline hover:text-[#fff] btn-warning ">View Details</Link>
                 </div>
             </div>
         </div>

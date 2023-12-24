@@ -12,7 +12,7 @@ const CustomersSay = () => {
                 <div className=" items-start p-5">
                     <p className='text-color2 md:text-lg md:text-left text-center text-sm uppercase tracking-widest'>Testimonials</p>
                     <h1 className="lg:text-4xl md:text-3xl text-2xl mt-4 mb-5 font-extrabold text-color line leading-tight">What Our Customers <br /> Say <span className="text-color2">About</span> Us</h1>
-                    <p className="lg:text-xl md:text-lg text-base font-medium text-[#4A4A4A] leading-tight text-justify">“I had the pleasure of dining at <span className='text-pink-800 italic font-bold'>Winddelivery</span> last night, and I am still raving about the experience! The attention to detail in presentation and service was impeccable”</p>
+                    <p className="lg:text-xl md:text-lg text-base font-medium text-[#4A4A4A] leading-tight text-justify">“I had the pleasure of dining at <span className='text-color2 italic font-bold'>Winddelivery</span> last night, and I am still raving about the experience! The attention to detail in presentation and service was impeccable”</p>
                     <div className='flex justify-around mt-12'>
                         <div className="avatar-group -space-x-6">
                             <div className="avatar">

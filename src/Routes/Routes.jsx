@@ -5,6 +5,7 @@ import AllFoods from "../Pages/AllFoods";
 import Blogs from "../Pages/Blogs";
 import Login from "../Pages/Login";
 import ErrorPage from "../Pages/ErrorPage";
+import SingleProduct from "../Pages/SingleProduct";
 
 const Routes = createBrowserRouter([
     {
@@ -27,6 +28,11 @@ const Routes = createBrowserRouter([
         {
             path:'/login',
             element:<Login/>
+        },
+        {
+          path:'foods/:id',
+          element:<SingleProduct/>,
+          loader:({params})=>fetch(`http://localhost:5000/product/${params.id}`)
         }
       ]
     },

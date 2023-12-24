@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import TopFoodCard from "../Components/TopFoodCard";
 import Swal from "sweetalert2";
+import { Helmet } from "react-helmet";
 
 const AllFoods = () => {
   const [allFoods, setAllFoods] = useState([]);
@@ -55,6 +56,7 @@ const AllFoods = () => {
 
   return (
     <div className="container mx-auto font-poppins lg:px-0 px-3">
+    <Helmet><title>All Foods</title></Helmet>
       <div className="md:w-1/2 mx-auto my-10 md:px-0 px-2">
         <form onSubmit={handleSearchItem}>
           <label className="mb-2 text-sm bg-color2 font-medium text-gray-900 sr-only">Search</label>
