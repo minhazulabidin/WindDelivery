@@ -8,6 +8,10 @@ export default {
     extend: {},
     fontFamily: {
       'poppins': "'Poppins', sans-serif",
+    },
+    colors:{
+      'color':'#44455B',
+      'color2':'#F4C276'
     }
   },
   plugins: [require("daisyui")],
