@@ -11,7 +11,7 @@ export default {
     },
     colors:{
       'color':'#44455B',
-      'color2':'#F4C276'
+      'color2':'#3A8700'
     }
   },
   plugins: [require("daisyui")],

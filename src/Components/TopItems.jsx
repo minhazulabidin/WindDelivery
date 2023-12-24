@@ -11,7 +11,7 @@ const TopItems = () => {
 
     return (
         <div className="container mx-auto mt-10 space-y-5">
-            <p className="text-[#F4C276] text-2xl font-bold text-center font-poppins">Picked Just for You</p>
+            <p className="text-color2 text-2xl font-bold text-center font-poppins">Picked Just for You</p>
             <h1 className="text-5xl font-bold text-color font-poppins text-center">Best Selling Food</h1>
             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5">
                 {
