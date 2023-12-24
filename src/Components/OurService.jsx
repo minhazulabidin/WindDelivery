@@ -11,7 +11,7 @@ const OurService = () => {
     {
       "id": 2,
       "title": "Fast delivery",
-      "description": " Expedited shipping or transportation services that ensure prompt and quick delivery of goods or services to customers within a short timeframe.",
+      "description": " Expedited shipping or transportation services that ensure prompt and quick delivery of goods or services to customers within a short time frame.",
       "img": 'https://i.ibb.co/QY1c04f/Group-8.png'
     },
     {
