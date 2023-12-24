@@ -10,7 +10,7 @@ const Banner3 = () => {
                                 Fresh & Healthy <span className="text-[#00B207]"> Organic</span> Food
                             </h1>
                             <p className="lg:text-2xl md:text-lg text-base font-medium text-[#4A4A4A] leading-tight">Where Each Plate Weaves a Story of Culinary Mastery and Passionate Craftsmanship</p>
-                            <button className='btn bg-[#00B207] text-white hover:bg-[#2c9e30]'>Order Now</button>
+                            <button className='btn bg-[#00B207] text-[#fff] hover:bg-[#2c9e30]'>Order Now</button>
                         </div>
                         <div className="basis-1/2">
                             <div className="relative flex justify-center">

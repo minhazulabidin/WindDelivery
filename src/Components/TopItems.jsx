@@ -5,7 +5,7 @@ import TopFoodCard from "./TopFoodCard";
 const TopItems = () => {
     const [topFoods, setTopFoods] = useState([]);
     useEffect(() => {
-        axios.get('http://localhost:5000/topitems')
+        axios.get('http://localhost:5000/top-items')
             .then(res => setTopFoods(res.data))
     }, [])
 

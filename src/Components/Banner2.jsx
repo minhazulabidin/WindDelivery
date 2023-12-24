@@ -11,7 +11,7 @@ const Banner2 = () => {
                            <span className='text-[#FF7E00]'>Fast</span> Food Delivery
                         </h1>
                         <p className="lg:text-2xl md:text-lg text-base font-medium text-[#4A4A4A] leading-tight">Where Each Plate Weaves a Story of Culinary Mastery and Passionate Craftsmanship</p>
-                        <button className='btn bg-[#FF7E00] text-white hover:bg-[#af7031]'>Order Now</button>
+                        <button className='btn bg-[#FF7E00] text-[#fff] hover:bg-[#af7031]'>Order Now</button>
                     </div>
                     <div className="basis-1/2">
                         <div className="relative flex justify-center">
