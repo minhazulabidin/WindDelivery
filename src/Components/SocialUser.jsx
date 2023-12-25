@@ -14,7 +14,7 @@ const SocialUser = () => {
             .then(res => {
                 Swal.fire({
                     icon: "success",
-                    title: `Welcome to Rivo ${res.user.displayName}`,
+                    title: `Welcome to windDelivery ${res.user.displayName}`,
                   });
                 navigate(location?.state ? location.state : '/')
             })

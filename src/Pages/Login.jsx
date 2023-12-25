@@ -27,7 +27,7 @@ const Login = () => {
             .then(res => {
                 navigate(location?.state ? location.state : '/')
                 Swal.fire({
-                    title: `Welcome to rivo ${res?.user?.displayName || ''}`,
+                    title: `Welcome to windDelivery ${res?.user?.displayName || ''}`,
                     text: "That thing is still around?",
                     icon: "question"
                 });

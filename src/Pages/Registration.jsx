@@ -53,7 +53,7 @@ const Registration = () => {
             .then(res => {
                 Swal.fire({
                     icon: "success",
-                    title: `Welcome to Donaty ${name}`
+                    title: `Welcome to Wind Delivery ${name}`
                   });
                 navigate(location?.state ? location.state : '/')
             })

@@ -1,5 +1,5 @@
 const getItem = () => {
-    const getCart = localStorage.getItem('rivo');
+    const getCart = localStorage.getItem('windDelivery');
     if (getCart) {
         return JSON.parse(getCart);
     }
@@ -7,7 +7,7 @@ const getItem = () => {
 }
 const saveCart = cart => {
     const cartStringified = JSON.stringify(cart);
-    localStorage.setItem('rivo', cartStringified);
+    localStorage.setItem('windDelivery', cartStringified);
 }
 const addToLs = id => {
     const cart = getItem();
