@@ -23,7 +23,7 @@ const OurService = () => {
   ]
 
   return (
-    <div className="text-center mt-10 space-y-3 container mx-auto">
+    <div className="text-center mt-10 space-y-3 container mx-auto md:px-0 px-6">
       <h1 className="text-5xl font-semibold text-color"> <span className="text-color2"> Our</span> Services</h1>
       <p className="text-lg">Your favorite food partner</p>
       <div className="grid md:grid-cols-3 grid-cols-1 gap-4">

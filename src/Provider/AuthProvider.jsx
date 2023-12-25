@@ -9,7 +9,7 @@ const googleProvider = new GoogleAuthProvider();
 
 function AuthProvider({ children }) {
 
-    const [user, setUser] = useState(true);
+    const [user, setUser] = useState(null);
     const [loader, setLoader] = useState(true);
     const [cartPrice, setCartPrice] = useState(0);
     const [cartItems, setCartItems] = useState([]);
@@ -59,7 +59,7 @@ function AuthProvider({ children }) {
 
     useEffect(() => {
         const unSubscribe = onAuthStateChanged(auth, (user) => {
-            // setUser(user)
+            setUser(user)
             setLoader(false)
         })
         return () => unSubscribe()
