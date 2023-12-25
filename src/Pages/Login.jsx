@@ -101,7 +101,7 @@ const Login = () => {
                         <div className="form-control mt-6">
                             <button type="submit" className="btn bg-color2 hover:bg-color2 text-[#fff]">Login</button>
                         </div>
-                        <p className="mt-3 text-sm text-center">Do not have an account? <Link to='/registration' className="hover:underline text-myColor font-medium">Registration</Link></p>
+                        <p className="mt-3 text-sm text-center">Do not have an account? <Link to='/registration' className="hover:underline text-color2 font-medium">Registration</Link></p>
                     </form>
                     <SocialUser/>
                 </div>
