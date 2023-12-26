@@ -8,6 +8,10 @@ import ErrorPage from "../Pages/ErrorPage";
 import SingleProduct from "../Pages/SingleProduct";
 import Registration from './../Pages/Registration';
 import Cart from "../Pages/Cart";
+import PrivetRoute from "./PrivetRoute";
+import MyOrder from "../Pages/MyOrder";
+import AddFood from "../Pages/AddFood";
+import MyAddFood from "../Pages/MyAddFood";
 
 const Routes = createBrowserRouter([
     {
@@ -37,7 +41,19 @@ const Routes = createBrowserRouter([
         },
         {
             path:'/cart',
-            element:<Cart/>
+            element:<PrivetRoute><Cart/></PrivetRoute>
+        },
+        {
+            path:'/myOrder',
+            element:<PrivetRoute><MyOrder/></PrivetRoute>
+        },
+        {
+            path:'/addFood',
+            element:<PrivetRoute><AddFood/></PrivetRoute>
+        },
+        {
+            path:'/MyAddFood',
+            element:<PrivetRoute><MyAddFood/></PrivetRoute>
         },
         {
           path:'foods/:id',

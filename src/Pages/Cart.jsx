@@ -61,6 +61,11 @@ const Cart = () => {
         const postData = await axios.post('http://localhost:5000/addCart', products)
         const data = await postData.data;
         if(data.acknowledged){
+            Swal.fire({
+                title: "Congratulation",
+                text: "Order Place Successfully",
+                icon: "success"
+            });
             deleteShoppingCart()
             navigate('/')
         }
