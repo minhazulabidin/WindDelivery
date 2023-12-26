@@ -64,21 +64,23 @@ function AuthProvider({ children }) {
             const userEmail = currentUser?.email || user?.email;
             const loggedUser = { email: userEmail };
             setUser(currentUser)
-            setLoader(false)
+            console.log(currentUser)
+            
             if (user) {
-                axios.post('http://localhost:5000/users', currentUser)
-                    .then(res => {console.log(res.data) })
-                    
+                axios.post('http://localhost:5000/users', currentUser,{ withCredentials: true })
+                    .then(res => { })
+
                 axios.post('http://localhost:5000/jwt', loggedUser, { withCredentials: true })
                     .then(res => {
-                        console.log(res.data)
+                        
                     })
             } else {
                 axios.post('http://localhost:5000/logout', loggedUser, { withCredentials: true })
                     .then(res => {
-                        console.log(res.data)
+                        
                     })
             }
+            setLoader(false)
         })
         return () => unSubscribe()
     }, [user])
