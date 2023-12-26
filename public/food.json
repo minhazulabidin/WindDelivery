@@ -10,7 +10,7 @@
         "strMealThumb": "https://www.themealdb.com/images/media/meals/1525876468.jpg",
         "strTags": "MainMeal",
         "strYoutube": "https://www.youtube.com/watch?v=9h9No18ZyCI",
-        "strPrice": "$17.50"
+        "strPrice": 17.50
     },
     {
         "idMeal": "52903",
@@ -23,7 +23,7 @@
         "strMealThumb": "https://www.themealdb.com/images/media/meals/xvrrux1511783685.jpg",
         "strTags": "Soup",
         "strYoutube": "https://www.youtube.com/watch?v=-DLDMQucqDI",
-        "strPrice": "$13.50"
+        "strPrice": 13.50
     },
     {
         "idMeal": "53026",
@@ -36,7 +36,7 @@
         "strMealThumb": "https://www.themealdb.com/images/media/meals/n3xxd91598732796.jpg",
         "strTags": null,
         "strYoutube": "https://www.youtube.com/watch?v=mulqW-J3Yy4",
-        "strPrice": "$27.50"
+        "strPrice": 27.50
     },
     {
         "idMeal": "52783",
@@ -49,7 +49,7 @@
         "strMealThumb": "https://www.themealdb.com/images/media/meals/qtqvys1468573168.jpg",
         "strTags": "Pasta",
         "strYoutube": "https://www.youtube.com/watch?v=45dpOfESxr8",
-        "strPrice": "$20.00"
+        "strPrice": 20.00
     },
     {
         "idMeal": "52898",
@@ -62,7 +62,7 @@
         "strMealThumb": "https://www.themealdb.com/images/media/meals/vqpwrv1511723001.jpg",
         "strTags": "Bun,Baking,Treat",
         "strYoutube": "https://www.youtube.com/watch?v=i_zemP3yBKw",
-        "strPrice": "$7.50"
+        "strPrice": 7.50
     },
     {
         "idMeal": "52926",
@@ -75,7 +75,7 @@
         "strMealThumb": "https://www.themealdb.com/images/media/meals/ytpstt1511814614.jpg",
         "strTags": "Pie,MainMeal,BBQ,Cake",
         "strYoutube": "https://www.youtube.com/watch?v=A96hbwobKKs",
-        "strPrice": "$17.40"
+        "strPrice": 17.40
     },
     {
         "idMeal": "53018",
@@ -88,7 +88,7 @@
         "strMealThumb": "https://www.themealdb.com/images/media/meals/md8w601593348504.jpg",
         "strTags": null,
         "strYoutube": "https://www.youtube.com/watch?v=Oqg_cO4s8ik",
-        "strPrice": "$22.50"
+        "strPrice": 22.50
     },
     {
         "idMeal": "52768",
@@ -101,7 +101,7 @@
         "strMealThumb": "https://www.themealdb.com/images/media/meals/wxywrq1468235067.jpg",
         "strTags": "Tart,Baking,Fruity",
         "strYoutube": "https://www.youtube.com/watch?v=rp8Slv4INLk",
-        "strPrice": "$32.50"
+        "strPrice": 32.50
     },
     {
         "idMeal": "52803",
@@ -114,7 +114,7 @@
         "strMealThumb": "https://www.themealdb.com/images/media/meals/vvpprx1487325699.jpg",
         "strTags": "Meat,Stew",
         "strYoutube": "https://www.youtube.com/watch?v=FS8u1RBdf6I",
-        "strPrice": "$22.50"
+        "strPrice": 22.50
     },
     {
         "idMeal": "52807",
@@ -127,7 +127,7 @@
         "strMealThumb": "https://www.themealdb.com/images/media/meals/urtpqw1487341253.jpg",
         "strTags": "Spicy,Bun,Calorific",
         "strYoutube": "https://www.youtube.com/watch?v=-84Zz2EP4h4",
-        "strPrice": "$17.50"
+        "strPrice": 17.50
     },
     {
         "idMeal": "52812",
@@ -140,6 +140,6 @@
         "strMealThumb": "https://www.themealdb.com/images/media/meals/ursuup1487348423.jpg",
         "strTags": "Meat",
         "strYoutube": "https://www.youtube.com/watch?v=gh48wM6bPWQ",
-        "strPrice": "$47.50"
+        "strPrice": 47.50
     }
 ]

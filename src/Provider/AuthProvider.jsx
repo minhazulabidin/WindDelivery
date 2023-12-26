@@ -19,7 +19,8 @@ function AuthProvider({ children }) {
 
     useEffect(() => {
         const cart = getItem();
-        setCartItems(cart)
+        const items = Object.keys(cart)
+        setCartItems(items)
     }, [])
 
     // create user by email password

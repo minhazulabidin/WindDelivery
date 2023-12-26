@@ -7,6 +7,7 @@ import Login from "../Pages/Login";
 import ErrorPage from "../Pages/ErrorPage";
 import SingleProduct from "../Pages/SingleProduct";
 import Registration from './../Pages/Registration';
+import Cart from "../Pages/Cart";
 
 const Routes = createBrowserRouter([
     {
@@ -33,6 +34,10 @@ const Routes = createBrowserRouter([
         {
             path:'/registration',
             element:<Registration/>
+        },
+        {
+            path:'/cart',
+            element:<Cart/>
         },
         {
           path:'foods/:id',

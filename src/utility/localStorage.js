@@ -1,29 +1,35 @@
 const getItem = () => {
-    const getCart = localStorage.getItem('windDelivery');
-    if (getCart) {
-        return JSON.parse(getCart);
+    let shoppingCart = {};
+    //get the shopping cart from local storage
+    const storedCart = localStorage.getItem('windDelivery');
+    if (storedCart) {
+        shoppingCart = JSON.parse(storedCart);
     }
-    return [];
-}
-const saveCart = cart => {
-    const cartStringified = JSON.stringify(cart);
-    localStorage.setItem('windDelivery', cartStringified);
+    return shoppingCart;
 }
 const addToLs = id => {
-    const cart = getItem();
-    const exists = cart.find(cartId => cartId === id);
-    if (!exists) {
-        cart.push(id);
-        saveCart(cart);
+    let shoppingCart = getItem();
+    // add quantity
+    const quantity = shoppingCart[id];
+    if (!quantity) {
+        shoppingCart[id] = 1;
     }
+    else {
+        const newQuantity = quantity + 1;
+        shoppingCart[id] = newQuantity;
+    }
+    localStorage.setItem('windDelivery', JSON.stringify(shoppingCart));
 }
 
 const deleteFromLs = id => {
-    const cart = getItem();
-    const index = cart.findIndex(cartId => cartId === id);
-    if (index !== -1) {
-        cart.splice(index, 1);
-        saveCart(cart);
+    const shoppingCart = getItem();
+    if (id in shoppingCart) {
+        delete shoppingCart[id];
+        localStorage.setItem('windDelivery', JSON.stringify(shoppingCart));
     }
 };
-export { addToLs, getItem, deleteFromLs }
+
+const deleteShoppingCart = () => {
+    localStorage.removeItem('windDelivery');
+}
+export { addToLs, getItem, deleteFromLs, deleteShoppingCart }
