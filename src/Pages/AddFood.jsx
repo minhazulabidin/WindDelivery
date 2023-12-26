@@ -29,7 +29,7 @@ const AddFood = () => {
       return;
     }
 
-    axios.post('http://localhost:5000/products', food)
+    axios.post('https://winddelivery-server-610hdeq2f-minhazs-projects.vercel.app/products', food)
       .then(res => {
         if (res.data.insertedId) {
           Swal.fire({
@@ -40,7 +40,7 @@ const AddFood = () => {
           form.reset();
         }
       })
-    axios.post('http://localhost:5000/products2', food)
+    axios.post('https://winddelivery-server-610hdeq2f-minhazs-projects.vercel.app/products2', food)
       .then(res => {
         if (res.data.insertedId) {
           form.reset();
