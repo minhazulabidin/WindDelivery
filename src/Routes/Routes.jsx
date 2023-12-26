@@ -12,6 +12,7 @@ import PrivetRoute from "./PrivetRoute";
 import MyOrder from "../Pages/MyOrder";
 import AddFood from "../Pages/AddFood";
 import MyAddFood from "../Pages/MyAddFood";
+import UpdateFood from "../Pages/UpdateFood";
 
 const Routes = createBrowserRouter([
     {
@@ -56,8 +57,13 @@ const Routes = createBrowserRouter([
             element:<PrivetRoute><MyAddFood/></PrivetRoute>
         },
         {
-          path:'foods/:id',
+          path:'/foods/:id',
           element:<SingleProduct/>,
+          loader:({params})=>fetch(`http://localhost:5000/product/${params.id}`)
+        },
+        {
+          path:'/updateFood/:id',
+          element:<UpdateFood/>,
           loader:({params})=>fetch(`http://localhost:5000/product/${params.id}`)
         }
       ]
