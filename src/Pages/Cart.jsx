@@ -16,7 +16,7 @@ const Cart = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        fetch(`https://winddelivery-server-kpavvra3a-minhazs-projects.vercel.app/products/cart?ids=${items}`)
+        fetch(`https://winddelivery-server.vercel.app/products/cart?ids=${items}`)
             .then(res => res.json())
             .then(data => {
                 const productsWithQuantity = data.map(product => ({
@@ -59,7 +59,7 @@ const Cart = () => {
         })
     }
     const handleCheckout = async () => {
-        const postData = await axios.post('https://winddelivery-server-kpavvra3a-minhazs-projects.vercel.app/addCart', products)
+        const postData = await axios.post('https://winddelivery-server.vercel.app/addCart', products)
         const data = await postData.data;
         if(data.acknowledged){
             Swal.fire({

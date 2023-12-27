@@ -31,7 +31,7 @@ const UpdateFood = () => {
             return;
         }
 
-        axios.put(`https://winddelivery-server-kpavvra3a-minhazs-projects.vercel.app/product/${_id}`, food)
+        axios.put(`https://winddelivery-server.vercel.app/product/${_id}`, food)
             .then(res => {
                 if (res.data.acknowledged) {
                     Swal.fire({
@@ -41,7 +41,7 @@ const UpdateFood = () => {
                     });
                 }
             })
-        axios.put(`https://winddelivery-server-kpavvra3a-minhazs-projects.vercel.app/product2/${_id}`, food)
+        axios.put(`https://winddelivery-server.vercel.app/product2/${_id}`, food)
             .then(res => {
             })
     }

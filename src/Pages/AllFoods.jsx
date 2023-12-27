@@ -12,13 +12,13 @@ const AllFoods = () => {
   const itemsPerPage = 9;
 
   useEffect(() => {
-    fetch('https://winddelivery-server-kpavvra3a-minhazs-projects.vercel.app/productsCount')
+    fetch('https://winddelivery-server.vercel.app/productsCount')
       .then(res => res.json())
       .then(data => setCount(data.count))
   }, [])
 
   useEffect(() => {
-    axios.get(`https://winddelivery-server-kpavvra3a-minhazs-projects.vercel.app/products?page=${currentPage}&size=${itemsPerPage}`)
+    axios.get(`https://winddelivery-server.vercel.app/products?page=${currentPage}&size=${itemsPerPage}`)
       .then(res => setAllFoods(res.data))
   }, [currentPage, itemsPerPage]);
 
@@ -45,7 +45,7 @@ const AllFoods = () => {
     e.preventDefault();
     const search = e.target.search.value.toLowerCase();
     try {
-      const res = await axios.get(`https://winddelivery-server-kpavvra3a-minhazs-projects.vercel.app/search-product?name=${search}`);
+      const res = await axios.get(`https://winddelivery-server.vercel.app/search-product?name=${search}`);
       setSearchedFoods(res.data);
     } catch (error) {
       if(error){

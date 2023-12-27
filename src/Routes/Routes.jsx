@@ -59,12 +59,12 @@ const Routes = createBrowserRouter([
         {
           path:'/foods/:id',
           element:<SingleProduct/>,
-          loader:({params})=>fetch(`https://winddelivery-server-kpavvra3a-minhazs-projects.vercel.app/product/${params.id}`)
+          loader:({params})=>fetch(`https://winddelivery-server.vercel.app/product/${params.id}`)
         },
         {
           path:'/updateFood/:id',
           element:<PrivetRoute><UpdateFood/></PrivetRoute>,
-          loader:({params})=>fetch(`https://winddelivery-server-kpavvra3a-minhazs-projects.vercel.app/product/${params.id}`)
+          loader:({params})=>fetch(`https://winddelivery-server.vercel.app/product/${params.id}`)
         }
       ]
     },

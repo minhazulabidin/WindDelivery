@@ -21,7 +21,7 @@ function AuthProvider({ children }) {
         const cart = getItem();
         const items = Object.keys(cart)
         setCartItems(items)
-    }, [])
+    }, [cartItems])
 
     // create user by email password
     const handleSignIn = (email, password) => {
@@ -64,18 +64,17 @@ function AuthProvider({ children }) {
             const userEmail = currentUser?.email || user?.email;
             const loggedUser = { email: userEmail };
             setUser(currentUser)
-            console.log(currentUser)
             
             if (user) {
-                axios.post('https://winddelivery-server-kpavvra3a-minhazs-projects.vercel.app/users', currentUser,{ withCredentials: true })
+                axios.post('https://winddelivery-server.vercel.app/users', currentUser,{ withCredentials: true })
                     .then(res => { })
 
-                axios.post('https://winddelivery-server-kpavvra3a-minhazs-projects.vercel.app/jwt', loggedUser, { withCredentials: true })
+                axios.post('https://winddelivery-server.vercel.app/jwt', loggedUser, { withCredentials: true })
                     .then(res => {
                         
                     })
             } else {
-                axios.post('https://winddelivery-server-kpavvra3a-minhazs-projects.vercel.app/logout', loggedUser, { withCredentials: true })
+                axios.post('https://winddelivery-server.vercel.app/logout', loggedUser, { withCredentials: true })
                     .then(res => {
                         
                     })
