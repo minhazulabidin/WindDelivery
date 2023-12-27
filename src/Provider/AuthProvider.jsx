@@ -67,15 +67,15 @@ function AuthProvider({ children }) {
             console.log(currentUser)
             
             if (user) {
-                axios.post('https://winddelivery-server-610hdeq2f-minhazs-projects.vercel.app/users', currentUser,{ withCredentials: true })
+                axios.post('https://winddelivery-server-kpavvra3a-minhazs-projects.vercel.app/users', currentUser,{ withCredentials: true })
                     .then(res => { })
 
-                axios.post('https://winddelivery-server-610hdeq2f-minhazs-projects.vercel.app/jwt', loggedUser, { withCredentials: true })
+                axios.post('https://winddelivery-server-kpavvra3a-minhazs-projects.vercel.app/jwt', loggedUser, { withCredentials: true })
                     .then(res => {
                         
                     })
             } else {
-                axios.post('https://winddelivery-server-610hdeq2f-minhazs-projects.vercel.app/logout', loggedUser, { withCredentials: true })
+                axios.post('https://winddelivery-server-kpavvra3a-minhazs-projects.vercel.app/logout', loggedUser, { withCredentials: true })
                     .then(res => {
                         
                     })

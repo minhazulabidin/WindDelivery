@@ -9,7 +9,7 @@ const MyOrder = () => {
   const { user } = useAuth()
   const [orders, setOrders] = useState([]);
   useEffect(() => {
-    axios.get(`https://winddelivery-server-610hdeq2f-minhazs-projects.vercel.app/orders?email=${user?.email}`, { withCredentials: true })
+    axios.get(`https://winddelivery-server-kpavvra3a-minhazs-projects.vercel.app/orders?email=${user?.email}`, { withCredentials: true })
       .then(res => setOrders(res.data))
   }, [user?.email])
 
@@ -29,7 +29,7 @@ const MyOrder = () => {
       confirmButtonText: "Yes, delete it!"
     }).then((result) => {
       if (result.isConfirmed) {
-        axios.delete(`https://winddelivery-server-610hdeq2f-minhazs-projects.vercel.app/orders/${id}`)
+        axios.delete(`https://winddelivery-server-kpavvra3a-minhazs-projects.vercel.app/orders/${id}`)
           .then(res => res.data)
 
         const remaining = orders.filter(order => order._id !== id)

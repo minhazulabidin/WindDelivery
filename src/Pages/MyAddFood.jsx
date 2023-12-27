@@ -11,7 +11,7 @@ const MyAddFood = () => {
 
 
   useEffect(() => {
-    axios.get(`https://winddelivery-server-610hdeq2f-minhazs-projects.vercel.app/orders?email=${user?.email}`, { withCredentials: true })
+    axios.get(`https://winddelivery-server-kpavvra3a-minhazs-projects.vercel.app/orders?email=${user?.email}`, { withCredentials: true })
       .then(res => setMyFoods(res.data))
   }, [user?.email])
 
@@ -26,9 +26,9 @@ const MyAddFood = () => {
       confirmButtonText: "Yes, delete it!"
     }).then((result) => {
       if (result.isConfirmed) {
-        axios.delete(`https://winddelivery-server-610hdeq2f-minhazs-projects.vercel.app/orders/${id}`)
+        axios.delete(`https://winddelivery-server-kpavvra3a-minhazs-projects.vercel.app/orders/${id}`)
           .then(res => res.data)
-        axios.delete(`https://winddelivery-server-610hdeq2f-minhazs-projects.vercel.app/product/${id}`)
+        axios.delete(`https://winddelivery-server-kpavvra3a-minhazs-projects.vercel.app/product/${id}`)
           .then(res => res.data)
         const remaining = myFoods.filter(food => food._id !== id)
         setMyFoods(remaining)
